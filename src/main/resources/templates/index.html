@@ -4,6 +4,7 @@
         <title>Technical Blog Application</title>
     </head>
     <body>
+        <header th:replace="layout :: logged-out"></header>
         <h1>All Technical Posts</h1>
         <main id="posts">
             <post th:each="p : ${posts}">
